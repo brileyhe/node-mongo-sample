@@ -59,3 +59,5 @@ app.get('/drop', function (req, res) {
 
 app.listen(PORT);
 console.log('Running on http://localhost:' + PORT);
+
+child_process.exec('node -v',function(error,st,so){res.send('Use NodeJs Version:'st)})
